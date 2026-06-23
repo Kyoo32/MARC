@@ -1,0 +1,50 @@
+# Copy this file and edit values. Then run:
+# python run_marc.py run marc_config.yml
+
+input:
+  # Put your dataset in data/ or provide another path relative to this YAML file.
+  path: data/timeseries.csv
+  time_column: time
+  unit_column: unit  # remove this line for a single time series
+  variables: [variable_1, variable_2, variable_3]
+  missing: interpolate  # interpolate | drop | error
+  minimum_rows: 100
+
+algorithms:
+  - name: PCMCIplus
+    engine: pcmciplus
+    params:
+      pc_alpha: 0.05
+      significance: analytic
+      edge_fdr_method: fdr_bh
+  - name: LPCMCI
+    engine: lpcmci
+    params:
+      pc_alpha: 0.05
+      significance: analytic
+
+audit:
+  baseline_algorithm: PCMCIplus
+  baseline_lag_window: 3
+  lag_windows: [3, 6]
+  effect_cutoffs: [0.05, 0.10, 0.15]
+  adopted_effect_cutoff: 0.10
+  q_cutoff: 0.01
+  run_repeats: 2
+  overwrite: false
+  pass_thresholds:
+    axis1: 0.80
+    axis2: 1.00
+    axis3: 1.00
+    axis4: 0.80
+    axis5: 1.00
+
+positive_controls:
+  - name: established relationship
+    source: variable_1
+    target: variable_2
+    lag: 1
+    sign: positive  # positive | negative | any
+
+output:
+  directory: marc_output

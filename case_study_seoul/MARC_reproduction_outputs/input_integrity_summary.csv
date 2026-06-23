@@ -1,0 +1,4 @@
+experiment,n_rows,n_stations,min_lag,max_lag,finite_values,preprocess_ids,algorithms
+exp1_pcmciplus_tau3,1028,9,0,3,True,dense_deseasonalized,PCMCI+
+exp2_pcmciplus_tau6,360,3,0,6,True,dense_deseasonalized,PCMCI+
+exp3_lpcmci_tau3,509,3,0,3,True,dense_deseasonalized,LPCMCI

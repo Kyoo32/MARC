@@ -1,0 +1,46 @@
+input:
+  path: demo_timeseries.csv
+  time_column: time
+  unit_column: unit
+  variables: [X, Y, Z]
+  missing: interpolate
+  minimum_rows: 100
+
+algorithms:
+  - name: PCMCIplus
+    engine: pcmciplus
+    params:
+      pc_alpha: 0.05
+      significance: analytic
+      edge_fdr_method: fdr_bh
+  - name: LPCMCI
+    engine: lpcmci
+    params:
+      pc_alpha: 0.05
+      significance: analytic
+
+audit:
+  baseline_algorithm: PCMCIplus
+  baseline_lag_window: 1
+  lag_windows: [1, 2]
+  effect_cutoffs: [0.05, 0.10, 0.15]
+  adopted_effect_cutoff: 0.05
+  q_cutoff: 0.05
+  run_repeats: 2
+  overwrite: false
+  pass_thresholds:
+    axis1: 0.67
+    axis2: 1.0
+    axis3: 1.0
+    axis4: 0.67
+    axis5: 1.0
+
+positive_controls:
+  - name: X drives Y at lag 1
+    source: X
+    target: Y
+    lag: 1
+    sign: positive
+
+output:
+  directory: demo_output

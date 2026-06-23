@@ -1,0 +1,9 @@
+numpy
+pandas
+matplotlib
+PyYAML
+tigramite
+jupyterlab
+nbformat
+openpyxl
+pyarrow

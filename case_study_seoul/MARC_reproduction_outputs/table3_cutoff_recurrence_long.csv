@@ -1,0 +1,22 @@
+edge,cutoff,station_count,station_total
+NO2-O3 tau0,0.05,9,9
+NO2-O3 tau0,0.1,9,9
+NO2-O3 tau0,0.15,9,9
+PM10-PM2.5 tau0,0.05,9,9
+PM10-PM2.5 tau0,0.1,9,9
+PM10-PM2.5 tau0,0.15,9,9
+CO-NO2 tau0,0.05,9,9
+CO-NO2 tau0,0.1,9,9
+CO-NO2 tau0,0.15,9,9
+CO-PM2.5 tau0,0.05,9,9
+CO-PM2.5 tau0,0.1,9,9
+CO-PM2.5 tau0,0.15,7,9
+NO2->O3 tau1,0.05,9,9
+NO2->O3 tau1,0.1,6,9
+NO2->O3 tau1,0.15,0,9
+PM10->PM2.5 tau1,0.05,8,9
+PM10->PM2.5 tau1,0.1,8,9
+PM10->PM2.5 tau1,0.15,2,9
+CO-SO2 tau0,0.05,8,9
+CO-SO2 tau0,0.1,5,9
+CO-SO2 tau0,0.15,1,9

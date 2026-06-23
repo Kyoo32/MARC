@@ -1,0 +1,4 @@
+experiment,n_pairs,directed,ambiguous,ambiguous_pct
+exp1_pcmciplus_tau3,108,27,81,75.0
+exp2_pcmciplus_tau6,32,4,28,87.5
+exp3_lpcmci_tau3,38,33,5,13.157894736842104

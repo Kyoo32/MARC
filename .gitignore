@@ -1,0 +1,20 @@
+# Researcher data and local configuration
+data/*
+!data/README.md
+marc_config.yml
+
+# Generated MARC results
+marc_output/
+**/demo_output/
+**/runs/
+
+# Executed notebooks and notebook checkpoints
+*_executed.ipynb
+.ipynb_checkpoints/
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store

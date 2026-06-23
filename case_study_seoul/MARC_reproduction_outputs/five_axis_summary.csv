@@ -1,0 +1,6 @@
+axis,name,status,metric,value
+1,spatial recurrence,evaluated,positive-control recurrence,NO2-O3=9/9; PM10-PM2.5=9/9; CO-NO2=9/9; CO-PM2.5=9/9
+2,lag-window sensitivity,evaluated,common lagged-edge sign agreement,"{""n_common"": 31, ""n_same_sign"": 30, ""same_sign_rate"": 0.967741935483871}"
+3,algorithm sensitivity,evaluated,common lagged-edge sign agreement / flagged large discrepancies,"{""n_common"": 28, ""n_same_sign"": 19, ""same_sign_rate"": 0.6785714285714286}; flagged=7"
+4,effect-size cutoff,evaluated,station recurrence across configured cutoffs,"cutoffs=(0.05, 0.1, 0.15)"
+5,run reproducibility,not_evaluated,strong-edge grade changes,"{""status"": ""not_evaluated"", ""reason"": ""Provide two genuine independent safe_edges_all.csv files.""}"
