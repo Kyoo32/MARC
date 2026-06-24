@@ -6,6 +6,10 @@ from analysis-design artifacts in observational multivariate time series.
 MARC is domain-agnostic. Variable names, units, positive controls, algorithms,
 lag windows, and thresholds are supplied through one YAML file.
 
+<p align="center">
+  <img src="docs/MARC_protocol.png" alt="MARC protocol overview" width="760">
+</p>
+
 English | [한국어](README.ko.md)
 
 ## One-command use
