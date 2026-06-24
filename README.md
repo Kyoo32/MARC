@@ -1,10 +1,12 @@
 # MARC
 
-**MARC (Multi-Axis Robustness Check)** separates robust causal-discovery signal
+MARC (Multi-Axis Robustness Check) separates robust causal-discovery signal
 from analysis-design artifacts in observational multivariate time series.
 
 MARC is domain-agnostic. Variable names, units, positive controls, algorithms,
 lag windows, and thresholds are supplied through one YAML file.
+
+English | [한국어](README.ko.md)
 
 ## One-command use
 
@@ -106,6 +108,13 @@ python run_marc.py run examples/marc_demo.yml
 The Jupyter notebook is deliberately thin: edit the YAML path and run its
 single command cell.
 
+## Seoul case study
+
+The Seoul air-quality directory is an example application of MARC, not a default
+input pipeline. It contains manuscript figures and summary tables, while raw
+public datasets must be obtained by researchers from the official Seoul Open
+Data Plaza sources described in [case_study_seoul/README.md](case_study_seoul/README.md).
+
 ## Repository layout
 
 ```text
@@ -115,8 +124,25 @@ examples/                   synthetic demonstration only
 case_study_seoul/           manuscript case-study figures and summary tables
 MARC_one_command.ipynb      optional notebook front end
 marc_config_template.yml    study configuration template
+SKILL.md                    short guide for AI coding agents and CLI assistants
 ```
 
 Generated outputs and local configuration files are ignored by Git. The
 repository therefore does not publish user paths, raw research data, or local
 run caches.
+
+## Agent guide
+
+This repository includes [SKILL.md](SKILL.md), a tool-neutral guide for AI coding
+agents and CLI assistants. It summarizes the MARC workflow, input and output
+contracts, safe editing rules, and smoke-test expectations so that Codex,
+Claude, terminal agents, and human collaborators can work from the same project
+logic.
+
+## License and data terms
+
+MARC source code is released under the MIT License. The license covers the code
+and documentation in this repository. It does not relicense external research
+data, including public datasets downloaded from Seoul Open Data Plaza or any
+other provider. Users are responsible for following the terms of their data
+source.

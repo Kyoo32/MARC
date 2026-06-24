@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "marc-audit"
 version = "0.1.0"
 description = "Multi-Axis Robustness Check for time-series causal discovery"
+license = { text = "MIT" }
 requires-python = ">=3.10"
 dependencies = [
   "numpy",
