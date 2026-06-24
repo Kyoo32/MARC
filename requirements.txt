@@ -3,6 +3,7 @@ pandas
 matplotlib
 PyYAML
 tigramite
+joblib
 jupyterlab
 nbformat
 openpyxl

@@ -129,7 +129,7 @@ examples/                   합성 데이터 데모
 case_study_seoul/           서울 대기질 사례 연구 그림과 요약표
 MARC_one_command.ipynb      선택적 노트북 front end
 marc_config_template.yml    연구 설정 템플릿
-SKILL.md                    AI 코딩 에이전트와 CLI assistant용 안내
+skills/marc/SKILL.md        AI 코딩 에이전트와 CLI assistant용 안내
 ```
 
 생성 산출물과 로컬 설정 파일은 Git에서 제외됩니다. 따라서 이 저장소는 사용자 개인 경로,
@@ -137,10 +137,11 @@ SKILL.md                    AI 코딩 에이전트와 CLI assistant용 안내
 
 ## 에이전트 안내
 
-이 저장소에는 AI 코딩 에이전트와 CLI assistant를 위한 도구 중립형 안내서
-[SKILL.md](SKILL.md)가 포함되어 있습니다. MARC 실행 흐름, 입력/출력 계약,
+이 저장소에는 AI 코딩 에이전트와 CLI assistant를 위한 안내서
+[skills/marc/SKILL.md](skills/marc/SKILL.md)가 포함되어 있습니다. MARC 실행 흐름, 입력/출력 계약,
 안전한 수정 원칙, smoke test 기준을 요약해 Codex, Claude, 터미널 에이전트,
-사람 연구자가 같은 프로젝트 로직을 공유할 수 있게 했습니다.
+사람 연구자가 같은 프로젝트 로직을 공유할 수 있게 했습니다. Claude Code 사용자는
+미러링된 [.claude/skills/marc/SKILL.md](.claude/skills/marc/SKILL.md)도 사용할 수 있습니다.
 
 ## 라이선스와 데이터 이용 조건
 

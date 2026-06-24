@@ -128,7 +128,7 @@ examples/                   synthetic demonstration only
 case_study_seoul/           manuscript case-study figures and summary tables
 MARC_one_command.ipynb      optional notebook front end
 marc_config_template.yml    study configuration template
-SKILL.md                    short guide for AI coding agents and CLI assistants
+skills/marc/SKILL.md        portable guide for AI coding agents and CLI assistants
 ```
 
 Generated outputs and local configuration files are ignored by Git. The
@@ -137,11 +137,12 @@ run caches.
 
 ## Agent guide
 
-This repository includes [SKILL.md](SKILL.md), a tool-neutral guide for AI coding
+This repository includes [skills/marc/SKILL.md](skills/marc/SKILL.md), a portable guide for AI coding
 agents and CLI assistants. It summarizes the MARC workflow, input and output
 contracts, safe editing rules, and smoke-test expectations so that Codex,
-Claude, terminal agents, and human collaborators can work from the same project
-logic.
+Claude, Codex, terminal agents, and human collaborators can work from the same
+project logic. Claude Code users may also use the mirrored
+[.claude/skills/marc/SKILL.md](.claude/skills/marc/SKILL.md).
 
 ## License and data terms
 
