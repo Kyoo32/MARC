@@ -1,5 +1,9 @@
 # MARC
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20993981.svg)](https://doi.org/10.5281/zenodo.20993981)
+![Python](https://img.shields.io/badge/Python-3.12-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 MARC (Multi-Axis Robustness Check) separates robust causal-discovery signal
 from analysis-design artifacts in observational multivariate time series.
 
